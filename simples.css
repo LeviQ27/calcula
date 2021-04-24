@@ -1,0 +1,36 @@
+/* Chama o Body do html
+Arrumando a altura e comprimento do body, a margem, que tipo de posicionamento que a tag vai ter, e o hiperlink da imagem
+ */
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background-image: url("https://wallpapercave.com/wp/wp1828982.jpg");
+}
+
+/* Chama as duas Div criadas
+Arruma elas ao centro da página, com posicionamento relativo e com uma sombra branca atrás das caixas
+*/
+div {
+  position: relative;
+  margin: 143px auto;
+  box-shadow: -1px -1px 20px 4px white;
+}
+
+/*O padrão das duas Divs
+Coloca um borda de 2px de cor preta, um fundo azul claro, com diferença de distância no início da segunda caixa
+*/
+#calculadora {
+  width: 186px;
+  margin-bottom: 20px;
+  border: solid 2px;
+  background-color: #B1D4E0;
+}
+
+#calculoFatorial {
+  width: 186px;
+  margin-top: auto;
+  border: solid 2px;
+  background-color: #B1D4E0;
+}

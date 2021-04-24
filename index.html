@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> <!--Início do html-->
+<head>
+  <meta charset="utf-8"></meta> <!--Seleciona a forma de texto UTF-8, onde contém os acentos e caracteres especiais-->
+  <meta name="viewport" content="width:device-width, initial-scale=2"> <!--Escolha de escala para funcionar em dispositivos mobile-->
+  <title>Cálculo Fatorial</title> <!--Título da página-->
+  <link rel="stylesheet" href="simples.css"> <!--Referência ao arquivo de css-->
+
+</head>
+
+<body> <!--Corpo onde fica os quadrados e a imagem de fundo-->
+
+
+  <div id="calculadora"> <!--Div para o calculo de soma, subtração, multiplicação e divisão-->
+    Calculadora <br/>
+    <!--Input do primeiro número-->
+    Primeiro número: <input id="num1" type="number"> <br/>
+    <!--Input do segundo número-->
+    Segundo número: <input id="num2" type="number"> <br/>
+    <!--Input de um numeral que vai se referir a um dos operados que estão disponiveis-->
+    Operador:<br/>
+    1 - Soma <br/>
+    2 - Subtração <br/>
+    3 - Multiplicação <br/>
+    4 - Divisão <br/>
+    <input type="number" id="operator"><br/>
+    <!--Botão que vai fazer a ação chamando a função calcular() escrita no script.js-->
+    <button onclick="calcular()">Calcular</button><br/>
+    <!--A função calcular() dá um retorno em resposta1 que será printada no output-->
+    Resposta: <output id="resposta1" style='display:inline'></output><br/>
+  </div>
+
+  <div id='calculoFatorial'><!--Div para o cálculo Fatorial-->
+    Calcular Fatorial <br/>
+    <!--Input do número a passar por fatorial-->
+    Número: <input id="num" type="number"> <br/>
+    <!--Botão que chama a função calcularFatorial() do arquivo script.js-->
+    <button onclick="calcularFatorial()">Fatorial</button><br/>
+    <!--A função calcularFatorial() dá um retorno em resposta que será printada no output-->
+    Resposta: <output id="resposta" style='display:inline'></output><br/>
+  </div>
+
+  <!--Chamada do arquivo script.js, onde estão as funções calcular() e calcularFatorial() que são chamadas no html em questão-->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html> <!--Fim do html-->
